@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0cee069-2614-49ef-9678-ab41af0c6129" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,14 +164,22 @@
       <option name="project" value="LOCAL" />
       <updated>1588452103249</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="travis ci">
+      <created>1588452374145</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588452374145</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Почта. [#184458]" />
     <MESSAGE value="codecov" />
-    <option name="LAST_COMMIT_MESSAGE" value="codecov" />
+    <MESSAGE value="travis ci" />
+    <option name="LAST_COMMIT_MESSAGE" value="travis ci" />
   </component>
   <component name="WindowStateProjectService">
     <state x="326" y="0" key="#Project_Structure" timestamp="1588189872135">
@@ -218,10 +226,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588415001504" />
-    <state x="560" y="0" key="CommitChangelistDialog2" timestamp="1588452098987">
+    <state x="560" y="0" key="CommitChangelistDialog2" timestamp="1588452371978">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="560" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588452098987" />
+    <state x="560" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588452371978" />
     <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1588189600752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -266,10 +274,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="326" y="61" width="1040" height="667" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588423801592" />
-    <state x="550" y="100" key="Vcs.Push.Dialog.v2" timestamp="1588452110032">
+    <state x="550" y="100" key="Vcs.Push.Dialog.v2" timestamp="1588452390270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="550" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588452110032" />
+    <state x="550" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588452390270" />
     <state x="840" y="145" key="chooseDestDirectoryDialog" timestamp="1588415170312">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
