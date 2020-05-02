@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0cee069-2614-49ef-9678-ab41af0c6129" name="Default Changelist" comment="" />
+    <list default="true" id="d0cee069-2614-49ef-9678-ab41af0c6129" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/actions/BaseAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/actions/ExitAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/actions/MergeMails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/actions/UserAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/input/ConsoleInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/input/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/input/StabInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/input/ValidateInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/logic/Logic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/logic/Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/start/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/start/StartUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/expected.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/list_of_a_lot_of_users.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/list_of_users.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/job4j/LogicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/job4j/ReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/job4j/StartUITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1bEFkx2vKOZ3XCWWP12mtjgLYg1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -15,8 +55,105 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../job4j/checkstyle.xml" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/ru/job4j" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ru/job4j/logic" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="org.infernus.idea.checkstyle.CheckStyleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="ru.job4j.User" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.job4j.start" />
+      <recent name="ru.job4j.actions" />
+      <recent name="ru.job4j.model" />
+      <recent name="ru.job4j.logic" />
+      <recent name="ru.job4j" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\mail_merge_application\src\main\java\ru\job4j\logic" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JAR Application.app.jar">
+    <configuration name="StartUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.start.StartUI" />
+      <module name="mail_merge_application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.actions.Logic" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogicTest.print" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mail_merge_application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.LogicTest" />
+      <option name="METHOD_NAME" value="print" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartUITest.mergeMails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mail_merge_application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.StartUITest" />
+      <option name="METHOD_NAME" value="mergeMails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartUITest.whenShowMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mail_merge_application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.StartUITest" />
+      <option name="METHOD_NAME" value="whenShowMenu" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/app.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.app.jar" />
+        <item itemvalue="Application.StartUI" />
+        <item itemvalue="JUnit.StartUITest.mergeMails" />
+        <item itemvalue="JUnit.StartUITest.whenShowMenu" />
+        <item itemvalue="JUnit.LogicTest.print" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -32,13 +169,105 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="326" y="0" key="#Project_Structure" timestamp="1588189872135">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="326" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1588189872135" />
+    <state x="392" y="0" width="582" height="728" key="#StartUI" timestamp="1588423827436">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="0" width="582" height="728" key="#StartUI/0.0.1366.728@0.0.1366.728" timestamp="1588423827436" />
+    <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1588364470590">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588364470590" />
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588338794043">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1588338794043" />
+    <state x="436" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588415150350">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="436" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1588415150350" />
+    <state x="829" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1588432664598">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="829" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1588432664598" />
+    <state x="893" y="292" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588257571800">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="893" y="292" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1588257571800" />
+    <state x="808" y="236" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588415170407">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="808" y="236" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1588415170407" />
+    <state x="741" y="185" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1588257594331">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="741" y="185" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1366.728@0.0.1366.728" timestamp="1588257594331" />
+    <state x="344" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588412863321">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="344" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1588412863321" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588415001504">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588415001504" />
     <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1588189600752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588189600752" />
-    <state x="368" y="12" key="SettingsEditor" timestamp="1588189610208">
+    <state width="1323" height="259" key="GridCell.Tab.0.bottom" timestamp="1588450399153">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="368" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588189610208" />
+    <state width="1323" height="259" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588450399153" />
+    <state width="1323" height="259" key="GridCell.Tab.0.center" timestamp="1588450399153">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="259" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588450399153" />
+    <state width="1323" height="259" key="GridCell.Tab.0.left" timestamp="1588450399153">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="259" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588450399153" />
+    <state width="1323" height="259" key="GridCell.Tab.0.right" timestamp="1588450399153">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="259" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588450399153" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1588426439824">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588426439824" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1588426439824">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1588426439824" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1588426439824">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1588426439824" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1588426439824">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1588426439824" />
+    <state x="0" y="22" key="Maven.ArtifactSearchDialog" timestamp="1588449019312">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="22" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1588449019312" />
+    <state x="326" y="61" width="1040" height="667" key="SettingsEditor" timestamp="1588423801592">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="326" y="61" width="1040" height="667" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588423801592" />
+    <state x="840" y="145" key="chooseDestDirectoryDialog" timestamp="1588415170312">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="840" y="145" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1588415170312" />
+    <state x="590" y="166" key="run.anything.popup" timestamp="1588338143074">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="590" y="166" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1588338143074" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588424215213">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1588424215213" />
   </component>
 </project>
