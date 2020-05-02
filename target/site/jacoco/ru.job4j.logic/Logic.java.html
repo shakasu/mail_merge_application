@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Logic.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">mail_merge_application</a> &gt; <a href="index.source.html" class="el_package">ru.job4j.logic</a> &gt; <span class="el_source">Logic.java</span></div><h1>Logic.java</h1><pre class="source lang-java linenums">package ru.job4j.logic;
+
+import ru.job4j.model.User;
+import java.util.*;
+
+<span class="fc" id="L6">public class Logic {</span>
+    public LinkedList&lt;User&gt; merge(LinkedList&lt;User&gt; input) {
+<span class="fc" id="L8">        LinkedList&lt;User&gt; result = new LinkedList&lt;&gt;();</span>
+<span class="fc" id="L9">        Set&lt;String&gt; merger = new HashSet&lt;&gt;();</span>
+<span class="fc" id="L10">        boolean allUsersAreNotUnique = true;</span>
+        do {
+<span class="fc" id="L12">            User currentUser = input.pop();</span>
+<span class="fc" id="L13">            int startSize = input.size();</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">            for (int i = 0; i &lt; startSize; i++) {</span>
+<span class="fc" id="L15">                User nextUser = input.pop();</span>
+<span class="fc" id="L16">                merger.addAll(nextUser.getMails());</span>
+<span class="fc" id="L17">                merger.addAll(currentUser.getMails());</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">                if (merger.size() == nextUser.getMails().size() + currentUser.getMails().size()) {</span>
+<span class="fc" id="L19">                    result.add(nextUser);</span>
+                } else {
+<span class="fc" id="L21">                    currentUser = new User(currentUser.getName(), new HashSet&lt;&gt;(merger));</span>
+                }
+<span class="fc" id="L23">                merger.clear();</span>
+            }
+<span class="fc" id="L25">            result.add(currentUser);</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">            if (result.size() != startSize) {</span>
+<span class="fc" id="L27">                input = result;</span>
+            } else {
+<span class="fc" id="L29">                allUsersAreNotUnique = false;</span>
+            }
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        } while (allUsersAreNotUnique);</span>
+<span class="fc" id="L32">        return result;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

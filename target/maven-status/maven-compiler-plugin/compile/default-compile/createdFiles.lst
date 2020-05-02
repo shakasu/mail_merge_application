@@ -1,0 +1,13 @@
+ru\job4j\input\StabInput.class
+ru\job4j\actions\BaseAction.class
+ru\job4j\start\StartUI.class
+ru\job4j\input\ConsoleInput.class
+ru\job4j\actions\UserAction.class
+ru\job4j\logic\Reader.class
+ru\job4j\actions\ExitAction.class
+ru\job4j\input\ValidateInput.class
+ru\job4j\input\Input.class
+ru\job4j\logic\Logic.class
+ru\job4j\model\User.class
+ru\job4j\actions\MergeMails.class
+ru\job4j\start\Menu.class

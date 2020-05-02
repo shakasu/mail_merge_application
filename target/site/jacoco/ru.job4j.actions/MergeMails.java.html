@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MergeMails.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">mail_merge_application</a> &gt; <a href="index.source.html" class="el_package">ru.job4j.actions</a> &gt; <span class="el_source">MergeMails.java</span></div><h1>MergeMails.java</h1><pre class="source lang-java linenums">package ru.job4j.actions;
+
+import ru.job4j.input.Input;
+import ru.job4j.logic.Logic;
+import ru.job4j.logic.Reader;
+import ru.job4j.model.User;
+
+import java.util.List;
+import java.util.function.Consumer;
+
+public class MergeMails extends BaseAction {
+    public MergeMails(int key, String name) {
+<span class="fc" id="L13">        super(key, name);</span>
+<span class="fc" id="L14">    }</span>
+
+    @Override
+    public boolean execute(Input input, Logic logic, Consumer&lt;String&gt; output) {
+<span class="fc" id="L18">        String path = input.askStr(&quot;Enter path: &quot;);</span>
+<span class="fc" id="L19">        List&lt;User&gt; result = logic.merge((new Reader(path)).getInput());</span>
+<span class="fc" id="L20">        output.accept(String.format(&quot;Merging mails of users was successful.%n%s&quot;, result.toString()));</span>
+<span class="fc" id="L21">        return true;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

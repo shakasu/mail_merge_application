@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Menu.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">mail_merge_application</a> &gt; <a href="index.source.html" class="el_package">ru.job4j.start</a> &gt; <span class="el_source">Menu.java</span></div><h1>Menu.java</h1><pre class="source lang-java linenums">package ru.job4j.start;
+
+import ru.job4j.actions.ExitAction;
+import ru.job4j.actions.MergeMails;
+import ru.job4j.actions.UserAction;
+import ru.job4j.input.Input;
+import ru.job4j.logic.Logic;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+
+public class Menu {
+    private final Input input;
+    private final Logic logic;
+    private final Consumer&lt;String&gt; output;
+
+<span class="fc" id="L18">    private final List&lt;UserAction&gt; actions = new ArrayList&lt;&gt;();</span>
+
+<span class="fc" id="L20">    public Menu(Input input, Logic logic, Consumer&lt;String&gt; output) {</span>
+<span class="fc" id="L21">        this.input = input;</span>
+<span class="fc" id="L22">        this.logic = logic;</span>
+<span class="fc" id="L23">        this.output = output;</span>
+<span class="fc" id="L24">    }</span>
+
+    public void fillActions() {
+<span class="fc" id="L27">        this.actions.add(0, new MergeMails(0, &quot;Merge.&quot;));</span>
+<span class="fc" id="L28">        this.actions.add(1, new ExitAction(1, &quot;Exit.&quot;));</span>
+<span class="fc" id="L29">    }</span>
+
+    public boolean select(int key) {
+<span class="fc" id="L32">        return this.actions.get(key).execute(this.input, this.logic, output);</span>
+    }
+
+    public void show() {
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        for (UserAction action : this.actions) {</span>
+<span class="pc bpc" id="L37" title="1 of 2 branches missed.">            if (action != null) {</span>
+<span class="fc" id="L38">                output.accept(action.info());</span>
+            }
+<span class="fc" id="L40">        }</span>
+<span class="fc" id="L41">    }</span>
+
+    public int size() {
+<span class="fc" id="L44">        return this.actions.size();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
