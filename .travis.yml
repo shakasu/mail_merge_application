@@ -18,3 +18,7 @@ notifications:
       shakasuone@gmail.com
     on_success: never # default: change
     on_failure: always # default: always
+#
+env:
+  global:
+    - CODECOV_TOKEN="3129a3a1-cf4f-411b-a2f8-dff5e9c7cec7"

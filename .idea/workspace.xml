@@ -2,100 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0cee069-2614-49ef-9678-ab41af0c6129" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/mail_merge_application.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/expected.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/list_of_a_lot_of_users.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/list_of_users.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/actions/BaseAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/actions/ExitAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/actions/MergeMails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/actions/UserAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/input/ConsoleInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/input/Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/input/StabInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/input/ValidateInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/logic/Logic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/logic/Reader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/start/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/start/StartUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/mail_merge_application-1.0-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/mail_merge_application-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-app.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchfc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchnc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchpc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/bundle.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/class.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/down.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/greenbar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/group.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/method.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/package.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/redbar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/session.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/source.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/up.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.actions/BaseAction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.actions/BaseAction.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.actions/ExitAction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.actions/ExitAction.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.actions/MergeMails.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.actions/MergeMails.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.actions/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.actions/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.input/ConsoleInput.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.input/ConsoleInput.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.input/StabInput.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.input/StabInput.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.input/ValidateInput.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.input/ValidateInput.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.input/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.input/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.logic/Logic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.logic/Logic.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.logic/Reader.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.logic/Reader.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.logic/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.logic/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.model/User.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.model/User.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.model/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.model/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.start/Menu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.start/Menu.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.start/StartUI.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.start/StartUI.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.start/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.start/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.LogicTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.ReaderTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.StartUITest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.LogicTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.ReaderTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.StartUITest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/job4j/LogicTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/job4j/ReaderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/job4j/StartUITest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/job4j/StartUITest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +29,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -249,12 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588450657514</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="codecov">
+      <created>1588452103249</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588452103249</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Почта. [#184458]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Почта. [#184458]" />
+    <MESSAGE value="codecov" />
+    <option name="LAST_COMMIT_MESSAGE" value="codecov" />
   </component>
   <component name="WindowStateProjectService">
     <state x="326" y="0" key="#Project_Structure" timestamp="1588189872135">
@@ -301,30 +218,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588415001504" />
-    <state x="636" y="0" key="CommitChangelistDialog2" timestamp="1588450653581">
+    <state x="560" y="0" key="CommitChangelistDialog2" timestamp="1588452098987">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="636" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588450653581" />
+    <state x="560" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588452098987" />
     <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1588189600752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588189600752" />
-    <state width="1323" height="258" key="GridCell.Tab.0.bottom" timestamp="1588451869756">
+    <state width="1323" height="258" key="GridCell.Tab.0.bottom" timestamp="1588452076592">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588451869756" />
-    <state width="1323" height="258" key="GridCell.Tab.0.center" timestamp="1588451869754">
+    <state width="1323" height="258" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588452076592" />
+    <state width="1323" height="258" key="GridCell.Tab.0.center" timestamp="1588452076592">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588451869754" />
-    <state width="1323" height="258" key="GridCell.Tab.0.left" timestamp="1588451869754">
+    <state width="1323" height="258" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588452076592" />
+    <state width="1323" height="258" key="GridCell.Tab.0.left" timestamp="1588452076591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588451869754" />
-    <state width="1323" height="258" key="GridCell.Tab.0.right" timestamp="1588451869755">
+    <state width="1323" height="258" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588452076591" />
+    <state width="1323" height="258" key="GridCell.Tab.0.right" timestamp="1588452076592">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588451869755" />
+    <state width="1323" height="258" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588452076592" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1588426439824">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -349,10 +266,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="326" y="61" width="1040" height="667" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588423801592" />
-    <state x="550" y="100" key="Vcs.Push.Dialog.v2" timestamp="1588450686002">
+    <state x="550" y="100" key="Vcs.Push.Dialog.v2" timestamp="1588452110032">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="550" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588450686002" />
+    <state x="550" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588452110032" />
     <state x="840" y="145" key="chooseDestDirectoryDialog" timestamp="1588415170312">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
