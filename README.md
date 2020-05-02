@@ -27,3 +27,8 @@
  user1 ->xxx@ya.ru,foo@gmail.com,lol@mail.ru,ups@pisem.net,aaa@bbb.ru
  
  user3 ->xyz@pisem.net,vasya@pupkin.com
+ 
+ Для запуска необходимо скачать файл app из папки target.
+ Вызвать командную строку и "java -jar app.jar". 
+
+Формат ввода для поиска исходного списка пользователей: "./src/main/resources/list_of_users.txt"
