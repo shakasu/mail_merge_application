@@ -2,6 +2,10 @@ package ru.job4j.model;
 
 import java.util.*;
 
+/**
+ * Базовая модель User учитывает, что имя пользователя в рамках задачи не имеет значения.
+ * Поэтому поле name в переопределенных методах не учитывается.
+ */
 public class User {
     private final String name;
     private final Set<String> mails;

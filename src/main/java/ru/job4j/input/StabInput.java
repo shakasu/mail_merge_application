@@ -1,5 +1,8 @@
 package ru.job4j.input;
 
+/**
+ * StabInput - "класс-заглушка", им будет имитирован пользовательский ввод. В JUnit тестах он заменит ConsoleInput.
+ */
 public class StabInput implements Input {
     private final String[] answers;
     private int cursor = 0;

@@ -4,32 +4,33 @@ import ru.job4j.model.User;
 import java.util.*;
 
 <span class="fc" id="L6">public class Logic {</span>
+
     public LinkedList&lt;User&gt; merge(LinkedList&lt;User&gt; input) {
-<span class="fc" id="L8">        LinkedList&lt;User&gt; result = new LinkedList&lt;&gt;();</span>
-<span class="fc" id="L9">        Set&lt;String&gt; merger = new HashSet&lt;&gt;();</span>
-<span class="fc" id="L10">        boolean allUsersAreNotUnique = true;</span>
+<span class="fc" id="L9">        LinkedList&lt;User&gt; result = new LinkedList&lt;&gt;();</span>
+<span class="fc" id="L10">        Set&lt;String&gt; merger = new HashSet&lt;&gt;();</span>
+<span class="fc" id="L11">        boolean allUsersAreNotUnique = true;</span>
         do {
-<span class="fc" id="L12">            User currentUser = input.pop();</span>
-<span class="fc" id="L13">            int startSize = input.size();</span>
-<span class="fc bfc" id="L14" title="All 2 branches covered.">            for (int i = 0; i &lt; startSize; i++) {</span>
-<span class="fc" id="L15">                User nextUser = input.pop();</span>
-<span class="fc" id="L16">                merger.addAll(nextUser.getMails());</span>
-<span class="fc" id="L17">                merger.addAll(currentUser.getMails());</span>
-<span class="fc bfc" id="L18" title="All 2 branches covered.">                if (merger.size() == nextUser.getMails().size() + currentUser.getMails().size()) {</span>
-<span class="fc" id="L19">                    result.add(nextUser);</span>
+<span class="fc" id="L13">            User currentUser = input.pop();</span>
+<span class="fc" id="L14">            int startSize = input.size();</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">            for (int i = 0; i &lt; startSize; i++) {</span>
+<span class="fc" id="L16">                User nextUser = input.pop();</span>
+<span class="fc" id="L17">                merger.addAll(nextUser.getMails());</span>
+<span class="fc" id="L18">                merger.addAll(currentUser.getMails());</span>
+<span class="fc bfc" id="L19" title="All 2 branches covered.">                if (merger.size() == nextUser.getMails().size() + currentUser.getMails().size()) {</span>
+<span class="fc" id="L20">                    result.add(nextUser);</span>
                 } else {
-<span class="fc" id="L21">                    currentUser = new User(currentUser.getName(), new HashSet&lt;&gt;(merger));</span>
+<span class="fc" id="L22">                    currentUser = new User(currentUser.getName(), new HashSet&lt;&gt;(merger));</span>
                 }
-<span class="fc" id="L23">                merger.clear();</span>
+<span class="fc" id="L24">                merger.clear();</span>
             }
-<span class="fc" id="L25">            result.add(currentUser);</span>
-<span class="fc bfc" id="L26" title="All 2 branches covered.">            if (result.size() != startSize) {</span>
-<span class="fc" id="L27">                input = result;</span>
+<span class="fc" id="L26">            result.add(currentUser);</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">            if (result.size() != startSize) {</span>
+<span class="fc" id="L28">                input = result;</span>
             } else {
-<span class="fc" id="L29">                allUsersAreNotUnique = false;</span>
+<span class="fc" id="L30">                allUsersAreNotUnique = false;</span>
             }
-<span class="fc bfc" id="L31" title="All 2 branches covered.">        } while (allUsersAreNotUnique);</span>
-<span class="fc" id="L32">        return result;</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">        } while (allUsersAreNotUnique);</span>
+<span class="fc" id="L33">        return result;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

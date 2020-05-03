@@ -3,6 +3,14 @@ package ru.job4j.input;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
+/**
+ * Класс ValidateInput будет пропускать через себя ввод через ConsoleInput.
+ * Для того, чтобы подвергать пользовательский ввод валидации.
+ * В текущем сценарии учтены:
+ * 1) выбор пункта не из меню.
+ * 2) ввод не чисел при выборе пункта меню.
+ * 3) ввод не существующего пути для исходных данных.
+ */
 public class ValidateInput implements Input {
     private final Input input;
 

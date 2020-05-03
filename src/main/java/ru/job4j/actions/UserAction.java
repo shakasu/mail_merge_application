@@ -5,6 +5,9 @@ import ru.job4j.logic.Logic;
 
 import java.util.function.Consumer;
 
+/**
+ * Интерфейс UserAction реализует шаблон проектирования Абстрактная фабрика.
+ */
 public interface UserAction {
     String info();
 

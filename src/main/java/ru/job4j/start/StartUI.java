@@ -7,6 +7,9 @@ import ru.job4j.logic.Logic;
 
 import java.util.function.Consumer;
 
+/**
+ * Точка входа в программу.
+ */
 public class StartUI {
     private final Input input;
     private final Logic logic;

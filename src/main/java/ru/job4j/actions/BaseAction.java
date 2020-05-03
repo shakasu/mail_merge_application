@@ -1,5 +1,8 @@
 package ru.job4j.actions;
 
+/**
+ * Класс BaseAction и его наследники реализуют шаблон проектирования Фабричный метод.
+ */
 public abstract class BaseAction implements UserAction {
     private final String name;
     private final int key;

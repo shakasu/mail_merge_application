@@ -2,6 +2,10 @@ package ru.job4j.input;
 
 import java.util.Scanner;
 
+/**
+ * ConsoleInput - основной класс, для ввода.
+ * Он будет работать с классом Scanner.
+ */
 public class ConsoleInput implements Input {
     private final Scanner scanner = new Scanner(System.in);
 

@@ -8,6 +8,9 @@ import ru.job4j.model.User;
 import java.util.List;
 import java.util.function.Consumer;
 
+/**
+ * Класс MergeMails реализует основной функционал приложения - объединять пользователей.
+ */
 public class MergeMails extends BaseAction {
     public MergeMails(int key, String name) {
         super(key, name);

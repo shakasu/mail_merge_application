@@ -10,6 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
+/**
+ * Класс Menu - отвечает за заполнение и правильное отображение списка доступных действий для пользователя.
+ */
 public class Menu {
     private final Input input;
     private final Logic logic;

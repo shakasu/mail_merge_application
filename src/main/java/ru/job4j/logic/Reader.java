@@ -6,6 +6,9 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Класс Reader отвечает за чтение исходных данных из файла и занесения их в связанный список.
+ */
 public class Reader {
     private final String path;
     private LinkedList<User> input = new LinkedList<>();

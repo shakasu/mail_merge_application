@@ -5,6 +5,9 @@ import ru.job4j.logic.Logic;
 
 import java.util.function.Consumer;
 
+/**
+ * Класс ExitAction осуществляет действие выхода из программы.
+ */
 public class ExitAction extends BaseAction {
 
     public ExitAction(int key, String name) {
