@@ -7,29 +7,32 @@ import ru.job4j.logic.Logic;
 
 import java.util.function.Consumer;
 
+/**
+ * Точка входа в программу.
+ */
 public class StartUI {
     private final Input input;
     private final Logic logic;
     private final Consumer&lt;String&gt; output;
 
-<span class="fc" id="L15">    public StartUI(Input input, Logic logic, Consumer&lt;String&gt; output) {</span>
-<span class="fc" id="L16">        this.input = input;</span>
-<span class="fc" id="L17">        this.logic = logic;</span>
-<span class="fc" id="L18">        this.output = output;</span>
-<span class="fc" id="L19">    }</span>
+<span class="fc" id="L18">    public StartUI(Input input, Logic logic, Consumer&lt;String&gt; output) {</span>
+<span class="fc" id="L19">        this.input = input;</span>
+<span class="fc" id="L20">        this.logic = logic;</span>
+<span class="fc" id="L21">        this.output = output;</span>
+<span class="fc" id="L22">    }</span>
 
     public void init() {
-<span class="fc" id="L22">        Menu menu = new Menu(this.input, this.logic, this.output);</span>
-<span class="fc" id="L23">        menu.fillActions();</span>
-<span class="fc" id="L24">        boolean run = true;</span>
-<span class="fc bfc" id="L25" title="All 2 branches covered.">        while (run) {</span>
-<span class="fc" id="L26">            menu.show();</span>
-<span class="fc" id="L27">            run = menu.select(input.askInt(&quot;Select: &quot;, menu.size() - 1));</span>
+<span class="fc" id="L25">        Menu menu = new Menu(this.input, this.logic, this.output);</span>
+<span class="fc" id="L26">        menu.fillActions();</span>
+<span class="fc" id="L27">        boolean run = true;</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        while (run) {</span>
+<span class="fc" id="L29">            menu.show();</span>
+<span class="fc" id="L30">            run = menu.select(input.askInt(&quot;Select: &quot;, menu.size() - 1));</span>
         }
-<span class="fc" id="L29">    }</span>
+<span class="fc" id="L32">    }</span>
 
     public static void main(String[] args) {
-<span class="nc" id="L32">    new StartUI(new ValidateInput(new ConsoleInput()), new Logic(), System.out::println).init();</span>
-<span class="nc" id="L33">    }</span>
+<span class="nc" id="L35">    new StartUI(new ValidateInput(new ConsoleInput()), new Logic(), System.out::println).init();</span>
+<span class="nc" id="L36">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

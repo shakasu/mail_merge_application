@@ -2,44 +2,48 @@
 
 import java.util.*;
 
+/**
+ * Базовая модель User учитывает, что имя пользователя в рамках задачи не имеет значения.
+ * Поэтому поле name в переопределенных методах не учитывается.
+ */
 public class User {
     private final String name;
     private final Set&lt;String&gt; mails;
 
-<span class="fc" id="L9">    public User(String name, Set&lt;String&gt; set) {</span>
-<span class="fc" id="L10">        this.name = name;</span>
-<span class="fc" id="L11">        this.mails = set;</span>
-<span class="fc" id="L12">    }</span>
+<span class="fc" id="L13">    public User(String name, Set&lt;String&gt; set) {</span>
+<span class="fc" id="L14">        this.name = name;</span>
+<span class="fc" id="L15">        this.mails = set;</span>
+<span class="fc" id="L16">    }</span>
 
     public String getName() {
-<span class="fc" id="L15">        return name;</span>
+<span class="fc" id="L19">        return name;</span>
     }
 
     public Set&lt;String&gt; getMails() {
-<span class="fc" id="L19">        return mails;</span>
+<span class="fc" id="L23">        return mails;</span>
     }
 
     @Override
     public String toString() {
-<span class="fc" id="L24">        return String.format(&quot;The user %s has the following accounts: %s%n&quot;, name, mails);</span>
+<span class="fc" id="L28">        return String.format(&quot;The user %s has the following accounts: %s%n&quot;, name, mails);</span>
 
     }
 
     @Override
     public boolean equals(Object o) {
-<span class="pc bpc" id="L30" title="1 of 2 branches missed.">        if (this == o) {</span>
-<span class="nc" id="L31">            return true;</span>
+<span class="pc bpc" id="L34" title="1 of 2 branches missed.">        if (this == o) {</span>
+<span class="nc" id="L35">            return true;</span>
         }
-<span class="pc bpc" id="L33" title="2 of 4 branches missed.">        if (o == null || getClass() != o.getClass()) {</span>
-<span class="nc" id="L34">            return false;</span>
+<span class="pc bpc" id="L37" title="2 of 4 branches missed.">        if (o == null || getClass() != o.getClass()) {</span>
+<span class="nc" id="L38">            return false;</span>
         }
-<span class="fc" id="L36">        User user = (User) o;</span>
-<span class="fc" id="L37">        return mails.equals(user.mails);</span>
+<span class="fc" id="L40">        User user = (User) o;</span>
+<span class="fc" id="L41">        return mails.equals(user.mails);</span>
     }
 
     @Override
     public int hashCode() {
-<span class="nc bnc" id="L42" title="All 2 branches missed.">        return mails != null ? mails.hashCode() : 0;</span>
+<span class="nc bnc" id="L46" title="All 2 branches missed.">        return mails != null ? mails.hashCode() : 0;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

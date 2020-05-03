@@ -2,27 +2,31 @@
 
 import java.util.Scanner;
 
-<span class="nc" id="L5">public class ConsoleInput implements Input {</span>
-<span class="nc" id="L6">    private final Scanner scanner = new Scanner(System.in);</span>
+/**
+ * ConsoleInput - основной класс, для ввода.
+ * Он будет работать с классом Scanner.
+ */
+<span class="nc" id="L9">public class ConsoleInput implements Input {</span>
+<span class="nc" id="L10">    private final Scanner scanner = new Scanner(System.in);</span>
 
     @Override
     public String askStr(String question) {
-<span class="nc" id="L10">        System.out.println(question);</span>
-<span class="nc" id="L11">        return scanner.nextLine();</span>
+<span class="nc" id="L14">        System.out.println(question);</span>
+<span class="nc" id="L15">        return scanner.nextLine();</span>
     }
 
     @Override
     public int askInt(String question) {
-<span class="nc" id="L16">        return Integer.parseInt(askStr(question));</span>
+<span class="nc" id="L20">        return Integer.parseInt(askStr(question));</span>
     }
 
     @Override
     public int askInt(String question, int max) {
-<span class="nc" id="L21">        int select = askInt(question);</span>
-<span class="nc bnc" id="L22" title="All 4 branches missed.">        if (select &lt; 0 || select &gt; max) {</span>
-<span class="nc" id="L23">            throw new IllegalStateException(String.format(&quot;Out of about %s &gt; [0, %s]&quot;, select, max));</span>
+<span class="nc" id="L25">        int select = askInt(question);</span>
+<span class="nc bnc" id="L26" title="All 4 branches missed.">        if (select &lt; 0 || select &gt; max) {</span>
+<span class="nc" id="L27">            throw new IllegalStateException(String.format(&quot;Out of about %s &gt; [0, %s]&quot;, select, max));</span>
         }
-<span class="nc" id="L25">        return select;</span>
+<span class="nc" id="L29">        return select;</span>
     }
 }
 

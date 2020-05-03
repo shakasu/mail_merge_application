@@ -3,49 +3,57 @@
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
+/**
+ * Класс ValidateInput будет пропускать через себя ввод через ConsoleInput.
+ * Для того, чтобы подвергать пользовательский ввод валидации.
+ * В текущем сценарии учтены:
+ * 1) выбор пункта не из меню.
+ * 2) ввод не чисел при выборе пункта меню.
+ * 3) ввод не существующего пути для исходных данных.
+ */
 public class ValidateInput implements Input {
     private final Input input;
 
-<span class="nc" id="L9">    public ValidateInput(Input input) {</span>
-<span class="nc" id="L10">        this.input = input;</span>
-<span class="nc" id="L11">    }</span>
+<span class="nc" id="L17">    public ValidateInput(Input input) {</span>
+<span class="nc" id="L18">        this.input = input;</span>
+<span class="nc" id="L19">    }</span>
 
     @Override
     public String askStr(String question) {
-<span class="nc" id="L15">        boolean invalid = true;</span>
-<span class="nc" id="L16">        String value = &quot;-1&quot;;</span>
+<span class="nc" id="L23">        boolean invalid = true;</span>
+<span class="nc" id="L24">        String value = &quot;-1&quot;;</span>
         do {
             try {
-<span class="nc" id="L19">                value = input.askStr(question);</span>
-<span class="nc" id="L20">                new FileReader(value);</span>
-<span class="nc" id="L21">                invalid = false;</span>
-<span class="nc" id="L22">            } catch (FileNotFoundException fileNotFoundException) {</span>
-<span class="nc" id="L23">                System.out.println(&quot;File not found, please try again: &quot;);</span>
-<span class="nc" id="L24">            }</span>
-<span class="nc bnc" id="L25" title="All 2 branches missed.">        } while (invalid);</span>
-<span class="nc" id="L26">        return value;</span>
+<span class="nc" id="L27">                value = input.askStr(question);</span>
+<span class="nc" id="L28">                new FileReader(value);</span>
+<span class="nc" id="L29">                invalid = false;</span>
+<span class="nc" id="L30">            } catch (FileNotFoundException fileNotFoundException) {</span>
+<span class="nc" id="L31">                System.out.println(&quot;File not found, please try again: &quot;);</span>
+<span class="nc" id="L32">            }</span>
+<span class="nc bnc" id="L33" title="All 2 branches missed.">        } while (invalid);</span>
+<span class="nc" id="L34">        return value;</span>
     }
 
     @Override
     public int askInt(String question) {
-<span class="nc" id="L31">        return Integer.parseInt(askStr(question));</span>
+<span class="nc" id="L39">        return Integer.parseInt(askStr(question));</span>
     }
 
     @Override
     public int askInt(String question, int max) {
-<span class="nc" id="L36">        boolean invalid = true;</span>
-<span class="nc" id="L37">        int value = -1;</span>
+<span class="nc" id="L44">        boolean invalid = true;</span>
+<span class="nc" id="L45">        int value = -1;</span>
         do {
             try {
-<span class="nc" id="L40">                value = input.askInt(question, max);</span>
-<span class="nc" id="L41">                invalid = false;</span>
-<span class="nc" id="L42">            } catch (IllegalStateException moe) {</span>
-<span class="nc" id="L43">                System.out.println(&quot;Please select key from menu.&quot;);</span>
-<span class="nc" id="L44">            } catch (NumberFormatException nfe) {</span>
-<span class="nc" id="L45">                System.out.println(&quot;Please enter validate data again.&quot;);</span>
-<span class="nc" id="L46">            }</span>
-<span class="nc bnc" id="L47" title="All 2 branches missed.">        } while (invalid);</span>
-<span class="nc" id="L48">        return value;</span>
+<span class="nc" id="L48">                value = input.askInt(question, max);</span>
+<span class="nc" id="L49">                invalid = false;</span>
+<span class="nc" id="L50">            } catch (IllegalStateException moe) {</span>
+<span class="nc" id="L51">                System.out.println(&quot;Please select key from menu.&quot;);</span>
+<span class="nc" id="L52">            } catch (NumberFormatException nfe) {</span>
+<span class="nc" id="L53">                System.out.println(&quot;Please enter validate data again.&quot;);</span>
+<span class="nc" id="L54">            }</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">        } while (invalid);</span>
+<span class="nc" id="L56">        return value;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

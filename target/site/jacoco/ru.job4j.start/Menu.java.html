@@ -10,38 +10,41 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
+/**
+ * Класс Menu - отвечает за заполнение и правильное отображение списка доступных действий для пользователя.
+ */
 public class Menu {
     private final Input input;
     private final Logic logic;
     private final Consumer&lt;String&gt; output;
 
-<span class="fc" id="L18">    private final List&lt;UserAction&gt; actions = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L21">    private final List&lt;UserAction&gt; actions = new ArrayList&lt;&gt;();</span>
 
-<span class="fc" id="L20">    public Menu(Input input, Logic logic, Consumer&lt;String&gt; output) {</span>
-<span class="fc" id="L21">        this.input = input;</span>
-<span class="fc" id="L22">        this.logic = logic;</span>
-<span class="fc" id="L23">        this.output = output;</span>
-<span class="fc" id="L24">    }</span>
+<span class="fc" id="L23">    public Menu(Input input, Logic logic, Consumer&lt;String&gt; output) {</span>
+<span class="fc" id="L24">        this.input = input;</span>
+<span class="fc" id="L25">        this.logic = logic;</span>
+<span class="fc" id="L26">        this.output = output;</span>
+<span class="fc" id="L27">    }</span>
 
     public void fillActions() {
-<span class="fc" id="L27">        this.actions.add(0, new MergeMails(0, &quot;Merge.&quot;));</span>
-<span class="fc" id="L28">        this.actions.add(1, new ExitAction(1, &quot;Exit.&quot;));</span>
-<span class="fc" id="L29">    }</span>
+<span class="fc" id="L30">        this.actions.add(0, new MergeMails(0, &quot;Merge.&quot;));</span>
+<span class="fc" id="L31">        this.actions.add(1, new ExitAction(1, &quot;Exit.&quot;));</span>
+<span class="fc" id="L32">    }</span>
 
     public boolean select(int key) {
-<span class="fc" id="L32">        return this.actions.get(key).execute(this.input, this.logic, output);</span>
+<span class="fc" id="L35">        return this.actions.get(key).execute(this.input, this.logic, output);</span>
     }
 
     public void show() {
-<span class="fc bfc" id="L36" title="All 2 branches covered.">        for (UserAction action : this.actions) {</span>
-<span class="pc bpc" id="L37" title="1 of 2 branches missed.">            if (action != null) {</span>
-<span class="fc" id="L38">                output.accept(action.info());</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        for (UserAction action : this.actions) {</span>
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">            if (action != null) {</span>
+<span class="fc" id="L41">                output.accept(action.info());</span>
             }
-<span class="fc" id="L40">        }</span>
-<span class="fc" id="L41">    }</span>
+<span class="fc" id="L43">        }</span>
+<span class="fc" id="L44">    }</span>
 
     public int size() {
-<span class="fc" id="L44">        return this.actions.size();</span>
+<span class="fc" id="L47">        return this.actions.size();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

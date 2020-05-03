@@ -8,17 +8,20 @@ import ru.job4j.model.User;
 import java.util.List;
 import java.util.function.Consumer;
 
+/**
+ * Класс MergeMails реализует основной функционал приложения - объединять пользователей.
+ */
 public class MergeMails extends BaseAction {
     public MergeMails(int key, String name) {
-<span class="fc" id="L13">        super(key, name);</span>
-<span class="fc" id="L14">    }</span>
+<span class="fc" id="L16">        super(key, name);</span>
+<span class="fc" id="L17">    }</span>
 
     @Override
     public boolean execute(Input input, Logic logic, Consumer&lt;String&gt; output) {
-<span class="fc" id="L18">        String path = input.askStr(&quot;Enter path: &quot;);</span>
-<span class="fc" id="L19">        List&lt;User&gt; result = logic.merge((new Reader(path)).getInput());</span>
-<span class="fc" id="L20">        output.accept(String.format(&quot;Merging mails of users was successful.%n%s&quot;, result.toString()));</span>
-<span class="fc" id="L21">        return true;</span>
+<span class="fc" id="L21">        String path = input.askStr(&quot;Enter path: &quot;);</span>
+<span class="fc" id="L22">        List&lt;User&gt; result = logic.merge((new Reader(path)).getInput());</span>
+<span class="fc" id="L23">        output.accept(String.format(&quot;Merging mails of users was successful.%n%s&quot;, result.toString()));</span>
+<span class="fc" id="L24">        return true;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

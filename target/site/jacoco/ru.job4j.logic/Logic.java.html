@@ -3,34 +3,45 @@
 import ru.job4j.model.User;
 import java.util.*;
 
-<span class="fc" id="L6">public class Logic {</span>
+/**
+ * Класс Logic является ключевым и осуществляет искомый алгоритм - объединять пользователей.
+ * Приблизительная временная сложность программы - O(n * log(n)),
+ * получается из вложенного цикла, где число итераций внутреннего постоянно уменьшается.
+ * За счет очереди поочередно сравнивается каждый элемент исходного листа.
+ * В зависимости от результата сравнения, происходит заполнение второй очереди result.
+ * В конце внешней итерации result становится основной очередью, тем самым сокращая количество внутренних итераций.
+ * Наличие пересечения определяется через класс Set: в множество добавляются адреса двух пользователей.
+ * Если длина Set равна сумме длин их списков почты по отдельности - пересечения нет.
+ * allUsersAreNotUnique - данное условия прекращает внешний цикл, если после внутренней итерации новых слияний не произошло.
+ */
+<span class="fc" id="L17">public class Logic {</span>
 
     public LinkedList&lt;User&gt; merge(LinkedList&lt;User&gt; input) {
-<span class="fc" id="L9">        LinkedList&lt;User&gt; result = new LinkedList&lt;&gt;();</span>
-<span class="fc" id="L10">        Set&lt;String&gt; merger = new HashSet&lt;&gt;();</span>
-<span class="fc" id="L11">        boolean allUsersAreNotUnique = true;</span>
+<span class="fc" id="L20">        LinkedList&lt;User&gt; result = new LinkedList&lt;&gt;();</span>
+<span class="fc" id="L21">        Set&lt;String&gt; merger = new HashSet&lt;&gt;();</span>
+<span class="fc" id="L22">        boolean allUsersAreNotUnique = true;</span>
         do {
-<span class="fc" id="L13">            User currentUser = input.pop();</span>
-<span class="fc" id="L14">            int startSize = input.size();</span>
-<span class="fc bfc" id="L15" title="All 2 branches covered.">            for (int i = 0; i &lt; startSize; i++) {</span>
-<span class="fc" id="L16">                User nextUser = input.pop();</span>
-<span class="fc" id="L17">                merger.addAll(nextUser.getMails());</span>
-<span class="fc" id="L18">                merger.addAll(currentUser.getMails());</span>
-<span class="fc bfc" id="L19" title="All 2 branches covered.">                if (merger.size() == nextUser.getMails().size() + currentUser.getMails().size()) {</span>
-<span class="fc" id="L20">                    result.add(nextUser);</span>
+<span class="fc" id="L24">            User currentUser = input.pop();</span>
+<span class="fc" id="L25">            int startSize = input.size();</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">            for (int i = 0; i &lt; startSize; i++) {</span>
+<span class="fc" id="L27">                User nextUser = input.pop();</span>
+<span class="fc" id="L28">                merger.addAll(nextUser.getMails());</span>
+<span class="fc" id="L29">                merger.addAll(currentUser.getMails());</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">                if (merger.size() == nextUser.getMails().size() + currentUser.getMails().size()) {</span>
+<span class="fc" id="L31">                    result.add(nextUser);</span>
                 } else {
-<span class="fc" id="L22">                    currentUser = new User(currentUser.getName(), new HashSet&lt;&gt;(merger));</span>
+<span class="fc" id="L33">                    currentUser = new User(currentUser.getName(), new HashSet&lt;&gt;(merger));</span>
                 }
-<span class="fc" id="L24">                merger.clear();</span>
+<span class="fc" id="L35">                merger.clear();</span>
             }
-<span class="fc" id="L26">            result.add(currentUser);</span>
-<span class="fc bfc" id="L27" title="All 2 branches covered.">            if (result.size() != startSize) {</span>
-<span class="fc" id="L28">                input = result;</span>
+<span class="fc" id="L37">            result.add(currentUser);</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">            if (result.size() != startSize) {</span>
+<span class="fc" id="L39">                input = result;</span>
             } else {
-<span class="fc" id="L30">                allUsersAreNotUnique = false;</span>
+<span class="fc" id="L41">                allUsersAreNotUnique = false;</span>
             }
-<span class="fc bfc" id="L32" title="All 2 branches covered.">        } while (allUsersAreNotUnique);</span>
-<span class="fc" id="L33">        return result;</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        } while (allUsersAreNotUnique);</span>
+<span class="fc" id="L44">        return result;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
